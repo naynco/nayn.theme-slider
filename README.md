@@ -1,4 +1,4 @@
-Star Base WordPress Theme
+NAYN.CO
 ===========
 
-A base and stripped theme for especially CMS like use cases
+![nayn.wordpress](/nayn.wordpress.png?raw=true)
