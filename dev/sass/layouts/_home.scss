@@ -1,0 +1,515 @@
+.hero-slider{
+  position: relative;
+  .container-image{
+    padding: 0px;
+    position: relative;
+    text-align: center;
+    &-overlay{
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      height: 580px;
+      position: absolute;
+      z-index: 1;
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+33,0.65+100 */
+      background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) -90%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) -90%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) -90%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+    }
+    &-effect{        
+      display: block;
+      position: relative;
+      z-index: 20;
+      &:after{
+        content: " ";
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        height: 580px;
+        position: absolute;
+        z-index: 1;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+33,0.65+100 */
+        background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) -90%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) -90%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) -90%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+      }
+    }
+    .show-mobile{
+      display: none;
+    }
+    .show-desktop{
+      display: block;
+    }
+    img{      
+      //height: 1080px;
+      //height: auto;
+      object-fit: cover;
+      width: 100%;      
+      position: relative;
+      
+      &:before {
+        content: " ";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
+        opacity: .6; 
+      }
+    }
+  }
+  &-content{
+    bottom: 60px;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    z-index: 999;
+  }
+  h1{
+    color: #fff;
+    font-size: 48px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    line-height: 60px;
+    text-shadow: 1px 2px 0px rgba(51, 51, 51, 1);
+  }
+  h2{
+    a{
+      color: #fff;
+      font-size: 60px;
+      font-weight: 900;
+      letter-spacing: 1px;
+      line-height: 80px;
+      text-shadow: 1px 2px 0px rgba(51, 51, 51, 1);
+      &:hover{
+        text-decoration: none;
+      }
+    }
+  }
+  &-post{
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+    right: 0px;
+    z-index: 999;
+    &-item{
+      &-container{
+        background-position: center center;
+        height: 150px;
+        border-radius: 5px;
+        &-overlay{
+          border-radius: 3px;
+          height: 150px;
+          display: flex;
+          align-items: flex-end;
+          position: relative;         
+          background: -moz-linear-gradient(top, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.45) 1%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+          background: -webkit-linear-gradient(top, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.45) 1%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+          background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.45) 1%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+        }
+        /*
+        h3{
+          font-size: 24px;
+          line-height: 40px;
+          padding: 0 20px 10px;
+          a{
+            color: #fff;
+            display: block;
+            &:hover{
+              text-decoration: none;
+            }
+          }
+        }*/
+        h3{
+          font-size: 24px;
+          line-height: 40px;
+          height: 100%;
+          width: 100%;
+          a{
+            color: #fff;
+            display: block;
+            width: 100%;
+            height: 100%;
+            display: block;
+            padding: 20px 20px 10px;
+            &:hover{
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+ .owl-carousel {
+  position: relative;
+  }
+  .owl-prev,
+  .owl-next {
+    font-size: 80px;
+    color: #fff;
+    position: absolute;
+    top: 45%;
+    margin-top: -20px;
+    opacity: .6;
+    &:hover{
+      color: $yellow-100;
+      opacity: 1;
+    }
+  }
+  .owl-prev {
+    left: 40px;
+  }
+  .owl-next {
+    right: 40px;
+  }
+}
+
+
+.meta{
+  &-slider{
+    margin-left: 5px;
+    margin-top: 15px;
+  }
+  &-post{
+    margin: 30px 0 0 5px;
+  }
+  &-link{
+    float: left;
+    color: $white-200;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    position: relative;
+    margin-left: 30px;
+    &:first-child{
+      margin-left: 0px;
+    }
+    &:after{
+      background-color: $white-200;
+      content: " ";
+      height: 30px;
+      top: -2px;
+      position: absolute;
+      right: -15px;
+      width: 1px;
+    }
+    &:last-child{
+      &::after{
+        display: none;
+      }
+    }
+    &:hover{
+      color: $yellow-100;
+      text-decoration: none;
+    }
+    &-icon{
+      font-size: 26px;
+      float: left;
+      display: block;
+    }
+    &-text{
+      font-size: 18px;
+      float: left;
+      display: block;
+      margin-left: 8px;
+    }
+  }
+}
+
+@media only screen and (min-width : 200px) and (max-width : 767px) {
+  .hero-slider{
+    .container-image{
+      &-overlay{
+        bottom: -1px;
+        top: 0px;
+        height: auto;
+      }
+      &-effect{
+        &:after{
+          bottom: -1px;
+          top: 0px;
+          height: auto;
+        }
+      }
+      .show-mobile{
+        display: block;
+      }
+      .show-desktop{
+        display: none;
+      }
+    }
+    &-content{
+      position: relative;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      z-index: 999;
+    }
+    h1{
+      font-size: 24px;
+      font-weight: 400;
+      letter-spacing: 0px;
+      line-height: 36px;
+    }
+    h2{
+      a{
+        font-size: 24px;
+        font-weight: 400;
+        letter-spacing: 0px;
+        line-height: 36px;
+      }
+    }
+    &-post{
+      position: relative;
+      bottom: initial;
+      left: 0px;
+      right: 0px;
+      z-index: 999;
+      &-item{
+        margin-top: 20px;
+        &-container{
+          h3{
+            font-size: 18px;
+            line-height: 32px;
+          }
+        }
+      }
+    }
+
+    .owl-prev,
+    .owl-next {
+      font-size: 100px;
+      top: 50px;
+      opacity: .8;
+    }
+    .owl-prev {
+      left: initial;
+      right: 60px;
+    }
+    .owl-next {
+      right: 14px;
+    }
+  }
+
+  // custom post type
+  .template-bag,
+  .template-home{
+    .meta{
+      &-link{
+        float: none;
+        margin-bottom: 5px;
+        margin-left: 0px;
+        &:after{
+          display: none;
+        }
+        &-icon{
+          text-align: center;
+          width: 30px;
+        }
+      }
+    } 
+  }
+}
+
+
+@media only screen and (min-width : 768px) and (max-width : 990px) {
+
+  .hero-slider{
+    .container-image{
+      &-overlay{
+        top: 0px;
+        height: auto;
+      }
+      &-effect{
+        &:after{
+          top: 0px;
+          height: auto;
+        }
+      }
+      .show-mobile{
+        display: block;
+      }
+      .show-desktop{
+        display: none;
+      }
+    }
+    
+    &-content{
+      bottom: 30px;
+      top: initial;
+    }
+    h1{
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      line-height: 48px;
+    }
+    h2{
+      a{
+        font-size: 32px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        line-height: 48px;
+      }
+    }
+    &-post{
+      position: relative;
+      bottom: initial;
+      left: 0px;
+      right: 0px;
+      z-index: 999;
+      &-item{
+        margin-top: 20px;
+        &-container{
+          h3{
+            font-size: 18px;
+            line-height: 32px;
+          }
+        }
+      }
+    }
+
+    .owl-prev,
+    .owl-next {
+      font-size: 100px;
+      top: 210px;
+      opacity: .8;
+    }
+    .owl-prev {
+      left: initial;
+      right: 80px;
+    }
+    .owl-next {
+      right: 34px;
+    }
+  }
+
+}
+
+@media only screen and (min-width : 991px) and (max-width : 1200px) {
+
+  .hero-slider{
+    .container-image{
+      &-overlay{
+        top: 0px;
+        height: auto;
+      }
+      &-effect{
+        &:after{
+          top: 0px;
+          height: auto;
+        }
+      }
+      .show-mobile{
+        display: none;
+      }
+      .show-desktop{
+        display: block;
+      }
+    }
+    
+    &-content{
+      bottom: 20px;
+      top: initial;
+      //margin-top: -400px;  
+      //margin-bottom: 40px;
+    }
+    h1{
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      line-height: 48px;
+    }
+    h2{
+      a{
+        font-size: 32px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        line-height: 48px;
+      }
+    }
+    &-post{
+      position: relative;
+      bottom: initial;
+      left: 0px;
+      right: 0px;
+      z-index: 999;
+      &-item{
+        margin-top: 20px;
+        &-container{
+          h3{
+            font-size: 18px;
+            line-height: 32px;
+          }
+        }
+      }
+    }
+
+    .owl-prev,
+    .owl-next {
+      font-size: 80px;
+      top: intial;
+      opacity: .6;
+    }
+    .owl-prev {
+      left: 40px;
+    }
+    .owl-next {
+      right: 40px;
+    }
+  }
+}
+
+@media only screen and (min-width : 1201px) and (max-width : 1599px) {
+
+  .hero-slider{
+    position: relative;
+    &-content{
+      bottom: 60px;
+    }
+    h1{
+      font-size: 36px;
+      font-weight: 900;
+      letter-spacing: 1px;
+      line-height: 48px;
+    }
+    h2{
+      a{
+        font-size: 36px;
+        font-weight: 900;
+        letter-spacing: 1px;
+        line-height: 48px;
+      }
+    }
+    &-post{
+      &-item{
+        &-container{
+          h3{
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 28px;
+            letter-spacing: 0.4px;
+          }
+        }
+      }
+    }
+   .owl-carousel {
+    position: relative;
+    }
+    .owl-prev,
+    .owl-next {
+      font-size: 70px;
+    }
+    .owl-prev {
+      left: 20px;
+    }
+    .owl-next {
+      right: 20px;
+    }
+  }
+
+}

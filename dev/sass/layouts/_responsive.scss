@@ -1,0 +1,52 @@
+@media only screen and (min-width : 200px) and (max-width : 767px) {
+	.meta{
+	    &-slider{
+	      	margin-left: 5px;
+	      	margin-top: 15px;
+	    }
+	    &-post{
+	      	margin: 30px 0 0 5px;
+	    }
+	    &-link{
+	      	height: 20px;
+	      	line-height: 20px;
+	      	margin-left: 30px;
+	      	&:first-child{
+	        	margin-left: 0px;
+	      	}
+	      	&:after{
+		        height: 20px;
+		        right: -15px;
+	      	}
+	      	&-icon{
+	        	font-size: 18px;
+	      	}
+	      	&-text{
+	        	font-size: 14px;
+	      	}
+	    }
+	}  
+
+}
+@media only screen and (min-width : 200px) and (max-width : 400px) {
+	.meta{
+	    &-link{
+	      	margin-left: 6px;
+	      	&:first-child{
+	        	margin-left: 0px;
+	      	}
+	      	&:after{
+	        	display: none;
+	      	}
+	    }
+  	}
+
+}
+@media only screen and (min-width : 768px) and (max-width : 990px) {
+}
+
+@media only screen and (min-width : 991px) and (max-width : 1600px) {	
+}
+@media only screen and (min-width : 1024px) and (max-width : 1200px) {
+}
+

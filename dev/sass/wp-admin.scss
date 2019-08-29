@@ -1,0 +1,32 @@
+.timeline-box{
+    border-bottom: 2px solid #f5f5f5; 
+    margin: 10px 0 20px;
+    &--new{
+        border: 0px !important;
+        margin: 0px;
+    }
+    table {
+        border-collapse: collapse;
+        margin: 0 0 20px;
+        padding: 10px;
+        width: 100%;
+        table-layout: fixed;
+        tr{
+            height: 40px;
+            .title{
+                width: 220px;
+                letter-spacing: .1px;
+                font-weight: bold;
+            }
+            .content{
+                input[type=text],
+                textarea{
+                    width: 100%;
+                }
+                .meta-image{
+                    width: 50% !important;
+                }
+            }
+        }
+    }
+}

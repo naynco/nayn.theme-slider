@@ -1,0 +1,24 @@
+{
+    "config": {
+        "vendor-dir": "inc/vendor",
+        "preferred-install" : "dist"
+    },
+    "require": {
+        "redux-framework/redux-framework" : "dev-master",
+        "tgm/plugin-activation" : "dev-master"
+    },
+    "autoload": {
+        "classmap": [
+            "inc/Dion"
+        ],
+        "files" : [
+            "inc/vendor/redux-framework/redux-framework.php"
+        ]
+
+    },
+    "extra": {
+        "installer-paths": {
+            "inc/vendor/{$name}/": ["type:wordpress-plugin"]
+        }
+    }
+}
