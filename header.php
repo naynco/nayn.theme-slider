@@ -63,7 +63,7 @@ global $options;
   <div class="container header-top">
     <div class="row">
       <div class="col-xl-7">      
-        <a class="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>?itm_source=Blog&itm_medium=Logo&itm_campaign=FromBlog" rel="home">
+        <a class="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>?utm_source=Blog&utm_medium=Logo&utm_campaign=FromBlog" rel="home">
           <img src="<?php echo DION_THEME_URL; ?>/assets/img/naynco.png" alt="<?php bloginfo( 'name' ); ?>">
         </a>
         <?php //wp_nav_menu( array( 'theme_location' => 'primary', 'container_class' => 'menu' ) ); ?>
