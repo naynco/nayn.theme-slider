@@ -30,6 +30,10 @@ global $options;
                 <li><a href="<?php echo $options['smTwitter']; ?>" target="_blank"><i class="fa fa-twitter"></i></a></li>
               <?php endif; ?>
 
+              <?php if ($options['smYoutube']): ?>
+                <li><a href="<?php echo $options['smYoutube']; ?>" target="_blank"><i class="fa fa-youtube"></i></a></li>
+              <?php endif; ?>
+
               <?php if ($options['smInstagram']): ?> 
                 <li><a href="<?php echo $options['smInstagram']; ?>" target="_blank"><i class="fa fa-instagram"></i></a></li>
               <?php endif; ?>
