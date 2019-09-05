@@ -14,7 +14,7 @@ global $options;
       <div class="container">
         <div class="row">
           <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-xs-12">
-            <div class="copyright"><?php _e('© 2018 Nayn.Co | Tüm Hakları Saklıdır.','nayn'); ?></div> 
+            <div class="copyright"><?php _e('© 2019 Nayn.Co | Tüm Hakları Saklıdır.','nayn'); ?></div> 
             <?php //wp_nav_menu( array( 'theme_location' => 'footer-section' ) ); ?>
           </div>
           <div class="col-xl-4 col-lg-4 col-md-4 text-center d-none d-sm-none d-md-block d-lg-block d-xl-block">
