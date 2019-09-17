@@ -23,7 +23,7 @@ $categoryHeadline = get_term_meta( 10143, 'category_headline', true);
     <div class="hero-slider-content category-page-content">
       <div class="container">
         <div class="row">
-          <div class="col-xl-6 col-lg-6 col-md-8 col-sm-12 col-xs-6">
+          <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-8">
             <?php the_archive_title( '<h1>', '</h1>' ); ?>
           </div> 
         </div>          
