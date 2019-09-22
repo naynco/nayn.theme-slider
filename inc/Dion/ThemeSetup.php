@@ -139,7 +139,6 @@ class ThemeSetup {
 		wp_enqueue_script('owl-carousel',DION_THEME_URL.'/assets/js/owl.carousel.min.js');
 		wp_enqueue_script('zuck',DION_THEME_URL.'/assets/js/zuck.min.js');
 		wp_enqueue_script('main',DION_THEME_URL.'/assets/js/main.min.js');
-		wp_enqueue_script('addthis','https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5a82c3f4cd06f81b');
 	}
 
 	/**
