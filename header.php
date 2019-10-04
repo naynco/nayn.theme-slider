@@ -66,7 +66,7 @@ global $options;
         <a class="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>?utm_source=Blog&utm_medium=Logo&utm_campaign=FromBlog" rel="home">
           <img src="<?php echo DION_THEME_URL; ?>/assets/img/naynco.png" alt="<?php bloginfo( 'name' ); ?>">
         </a>
-        <?php //wp_nav_menu( array( 'theme_location' => 'primary', 'container_class' => 'menu' ) ); ?>
+        <?php wp_nav_menu( array( 'theme_location' => 'primary', 'container_class' => 'menu' ) ); ?>
       </div>
     </div>
   </div>
@@ -80,6 +80,5 @@ global $options;
   <a href="#" class="menuBtn">
     <span class="lines"></span>
   </a>
-  <?php //wp_nav_menu( array( 'theme_location' => 'primary', 'container_class' => 'mainMenu', 'container' => 'nav' ) ); ?>
+  <?php  wp_nav_menu( array( 'theme_location' => 'primary', 'container_class' => 'mainMenu', 'container' => 'nav' ) ); ?>
 </header>
-
