@@ -9,12 +9,12 @@ $authorID = get_the_author_meta('ID');
 $postCategories   = get_the_category();
 $theCategory      = array();
 $authorDisplayName= get_the_author_meta('display_name', $authorID);
-$authorProfileURL = get_author_posts_url( $authorID, get_the_author_meta( 'user_nicename', $authorID ) );
+$authorProfileURL = get_author_posts_url($authorID, get_the_author_meta('user_nicename', $authorID));
 $thePostID        = get_the_ID();
-$show_author      = get_post_meta($thePostID,'show_author',false);
+$show_author      = get_post_meta($thePostID, 'show_author', false);
 
 foreach ($postCategories as $category) {
-  $theCategory[] = $category->term_id;
+    $theCategory[] = $category->term_id;
 }
 
 ?>
@@ -34,7 +34,7 @@ foreach ($postCategories as $category) {
         <div class="row">
           <div class="col-xl-5 col-lg-7 col-md-8 offset-md-2 col-sm-12 single-page-content-container">
             <div class="category">
-              <?php echo get_the_category_list( _x( ' ', '', 'nayn' ) ); ?>
+              <?php echo get_the_category_list(_x(' ', '', 'nayn')); ?>
             </div>
             <h1><?php echo get_the_title(); ?></h1>
 
@@ -43,7 +43,7 @@ foreach ($postCategories as $category) {
                 <span class="meta-link-icon"><i class="fa fa-clock-o"></i></span>
                 <span class="meta-link-text"><?php the_date("H:i j F Y"); ?></span>
               </div>
-              <?php if($show_author){ ?>
+              <?php if ($show_author) { ?>
               <a href="<?php echo $authorProfileURL; ?>" class="meta-link">
                 <span class="meta-link-icon"><i class="fa fa-user-o"></i></span>
                 <span class="meta-link-text"><?php the_author(); ?></span>
@@ -59,7 +59,7 @@ foreach ($postCategories as $category) {
             </div>
 
             <div class="entry-tag">
-              <?php echo get_the_tag_list('',', '); ?>
+              <?php echo get_the_tag_list('', ', '); ?>
             </div>
 
           </div> 
@@ -67,11 +67,11 @@ foreach ($postCategories as $category) {
       </div>
 
       <div class="post-prev">
-        <?php next_post_link( '%link', '<i class="fa fa-angle-left"></i>'); ?>
+        <?php next_post_link('%link', '<i class="fa fa-angle-left"></i>'); ?>
       </div>
 
       <div class="post-next">
-        <?php previous_post_link( '%link', '<i class="fa fa-angle-right"></i>'); ?>
+        <?php previous_post_link('%link', '<i class="fa fa-angle-right"></i>'); ?>
       </div>
       
     </div>
