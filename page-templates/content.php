@@ -11,6 +11,7 @@ $theCategory      = array();
 $authorDisplayName= get_the_author_meta('display_name', $authorID);
 $authorProfileURL = get_author_posts_url( $authorID, get_the_author_meta( 'user_nicename', $authorID ) );
 $thePostID        = get_the_ID();
+$show_author      = get_post_meta($thePostID,'show_author',false);
 
 foreach ($postCategories as $category) {
   $theCategory[] = $category->term_id;
@@ -42,11 +43,12 @@ foreach ($postCategories as $category) {
                 <span class="meta-link-icon"><i class="fa fa-clock-o"></i></span>
                 <span class="meta-link-text"><?php the_date("H:i j F Y"); ?></span>
               </div>
-              <?php /*
+              <?php if($show_author){ ?>
               <a href="<?php echo $authorProfileURL; ?>" class="meta-link">
                 <span class="meta-link-icon"><i class="fa fa-user-o"></i></span>
                 <span class="meta-link-text"><?php the_author(); ?></span>
-              </a> */ ?>
+              </a>
+              <?php } ?> 
             </div>
 
             <div class="clearfix"></div>
