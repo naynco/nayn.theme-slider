@@ -1,0 +1,16 @@
+{
+    "name": "nayn.wordpress",
+    "version": "1.0.0",
+    "description": "NAYN.CO Wordpress Theme",
+    "main": "",
+    "dependencies": {
+        "node-sass": "4.12.0",
+        "uglify-js": "3.6.0"
+    },
+    "scripts": {
+        "minifyJS": "uglifyjs dev/js/main.js --compress --mangle --warn --output assets/js/main.min.js",
+        "scss": "node-sass --watch dev/sass -o assets/css"
+    },
+    "author": "hi@nayn.org",
+    "license": "AGPL-3.0"
+}
