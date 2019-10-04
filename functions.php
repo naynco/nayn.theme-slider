@@ -504,3 +504,10 @@ function next_post_link_attributes() {
         break;
     }
  }
+
+ function add_query_vars_filter( $vars ){
+    $vars[] = "view";
+    return $vars;
+  }
+  
+  add_filter( 'query_vars', 'add_query_vars_filter' );
