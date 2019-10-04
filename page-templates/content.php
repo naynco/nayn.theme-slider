@@ -24,15 +24,15 @@ foreach ($postCategories as $category) {
 
   <div class="item hero-slider-item">
     
-    <div class="container-image">
+  <div class="container-image">
       <div class="container-image-overlay"></div>
       
       <?php
       if (has_post_thumbnail()) {
           the_post_thumbnail('hero');
-      } else {
-          echo '<img src="'.DION_THEME_URL.'/assets/img/404.jpg">';
-      } ?>
+      } else { ?>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+      <?php } ?>
     </div>
 
     <div class="hero-slider-content single-page-content">

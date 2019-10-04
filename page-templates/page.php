@@ -22,7 +22,13 @@ foreach ($postCategories as $category) {
     
     <div class="container-image">
       <div class="container-image-overlay"></div>
-      <?php the_post_thumbnail('hero'); ?>
+      
+      <?php
+      if (has_post_thumbnail()) {
+          the_post_thumbnail('hero');
+      } else { ?>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+      <?php } ?>
     </div>
 
     <div class="hero-slider-content single-page-content">
