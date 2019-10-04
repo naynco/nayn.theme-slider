@@ -26,7 +26,13 @@ foreach ($postCategories as $category) {
     
     <div class="container-image">
       <div class="container-image-overlay"></div>
-      <?php the_post_thumbnail('hero'); ?>
+      
+      <?php
+      if (has_post_thumbnail()) {
+          the_post_thumbnail('hero');
+      } else {
+          echo '<img src="'.DION_THEME_URL.'/assets/img/404.jpg">';
+      } ?>
     </div>
 
     <div class="hero-slider-content single-page-content">
