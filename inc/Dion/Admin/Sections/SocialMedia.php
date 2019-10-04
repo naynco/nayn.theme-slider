@@ -31,6 +31,15 @@ class SocialMedia
                 ),
 
                 array(
+                    'id'        => 'smYoutube',
+                    'type'      => 'text',
+                    'title'     => __('Youtube', 'dion'),
+                    'validate'  => 'no_html',
+                    'default'   => '',
+                ),
+
+
+                array(
                     'id'        => 'smInstagram',
                     'type'      => 'text',
                     'title'     => __('Instagram', 'dion'),
