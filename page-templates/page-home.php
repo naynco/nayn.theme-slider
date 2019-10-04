@@ -13,9 +13,9 @@ $args = array(
                                       'key'     => 'post_headline',
                                       'value'   => 1)),
     );
-
+$view = get_query_var('view') ?: 'list';
 $the_query = new WP_Query( $args ); ?>
-<?php if (get_query_var('view')=='list'){ ?>
+<?php if ($view == 'list'){ ?>
   <div class="hero-slider single-page">
 
 <div class="item hero-slider-item">
@@ -55,7 +55,7 @@ $the_query = new WP_Query( $args ); ?>
 </div> <!-- .hero-slider-item -->
 </div> <!-- .hero-slider -->
 <div class="clearfix"></div>
-<?php } else if (get_query_var('view')=='slider'){ ?>
+<?php } else if ($view=='slider'){ ?>
 <div class="hero-slider theme-slider template-home owl-carousel">
 
   <?php if ($the_query->have_posts()) : while ($the_query->have_posts()) : $the_query->the_post();
