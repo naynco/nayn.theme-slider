@@ -41,7 +41,7 @@ $the_query = new WP_Query( $args ); ?>
           <a href="<?php the_permalink(); ?>" class="list-group-item list-group-item-action bg-transparent">
             <div class="d-flex w-100">
               <small class="text-danger"><?php echo get_the_date("H:i"); ?></small>
-              <span class="ml-2"><?php echo get_the_title(); ?></span>
+              <span class="ml-2 text-white"><?php echo get_the_title(); ?></span>
             </div>
           </a>
 
