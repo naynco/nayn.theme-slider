@@ -154,7 +154,6 @@
 }
 
 @media only screen and (min-width : 200px) and (max-width : 767px) {
-  .single .single-page-content{margin-top:60px;}
   .single-page{
     &-content{
       margin-top: 0px;
@@ -179,6 +178,8 @@
     }
 
   }
+
+  .single-post .single-page-content{margin-top:240px;}
 
   .single-category-page{
     border: 10px solid $white-300;
