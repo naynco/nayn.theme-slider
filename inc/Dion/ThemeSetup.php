@@ -136,7 +136,7 @@ class ThemeSetup {
 		//put modernizr as late as possible
 		wp_enqueue_script('bootstrap',DION_THEME_URL.'/assets/js/bootstrap.min.js');
 		wp_enqueue_script('owl-carousel',DION_THEME_URL.'/assets/js/owl.carousel.min.js');
-		wp_enqueue_script('zuck',DION_THEME_URL.'/assets/js/zuck.min.js');
+		wp_enqueue_script('darkmode','https://cdn.jsdelivr.net/npm/darkmode-js@1.5.0/lib/darkmode-js.min.js');
 		wp_enqueue_script('main',DION_THEME_URL.'/assets/js/main.min.js');
 	}
 
