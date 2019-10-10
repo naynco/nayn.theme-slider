@@ -104,8 +104,7 @@ class ThemeSetup {
 		wp_enqueue_style('bootstrap',DION_THEME_URL.'/assets/css/bootstrap.min.css');
 		wp_enqueue_style('font-awesome',DION_THEME_URL.'/assets/css/font-awesome.min.css');
 		wp_enqueue_style('owl-carousel',DION_THEME_URL.'/assets/css/owl.carousel.min.css');
-		wp_enqueue_style('zuck',DION_THEME_URL.'/assets/css/zuck.min.css');
-		wp_enqueue_style('main',DION_THEME_URL.'/assets/css/main.min.css', array(), '1.1.3.17', false);
+		wp_enqueue_style('main',DION_THEME_URL.'/assets/css/main.min.css', array(), '1.2', false);
 	}
 
 	/**
