@@ -10,7 +10,7 @@ $categoryHeadline = get_term_meta( $theCategory[0], 'category_headline', true);
 ?>
 
 <div class="hero-slider single-category-page">
-  <div class="item hero-slider-item d-none d-lg-block">
+  <div class="item hero-slider-item ">
 
     <?php 
       $categoryArgs = array(
