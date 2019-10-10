@@ -29,12 +29,12 @@ $categoryHeadline = get_term_meta( $theCategory[0], 'category_headline', true);
 
       $heroPostID = get_the_ID(); ?>
     
-        <div class="container-image">
+        <div class="container-image d-none d-lg-block">
           <div class="container-image-overlay"></div>
           <?php echo get_the_post_thumbnail(get_the_ID(), 'hero'); ?>
         </div>
 
-        <div class="hero-slider-content single-category-page-content">
+        <div class="hero-slider-content single-category-page-content d-none d-lg-block">
           <div class="container">
             <div class="row">
               
