@@ -29,27 +29,18 @@ $the_query = new WP_Query( $args ); ?>
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
-        <div class="list-group bg-transparent">
-        <?php
-            if ($the_query->have_posts()) : while ($the_query->have_posts()) : $the_query->the_post();
-
-            // Get the author info
-            $authorID = get_the_author_meta('ID');
-            $authorDisplayName= get_the_author_meta('display_name', $authorID);
-            $authorProfileURL = get_author_posts_url($authorID, get_the_author_meta('user_nicename', $authorID));
-            ?>
-          <a href="<?php the_permalink(); ?>" class="list-group-item list-group-item-action bg-transparent">
-            <div class="d-flex w-100">
-              <small class="text-danger"><?php echo get_the_date("H:i"); ?></small>
-              <span class="ml-2 text-white"><?php echo get_the_title(); ?></span>
-            </div>
-          </a>
-
+          <div class="list-group bg-transparent">
+            <?php if ($the_query->have_posts()) : while ($the_query->have_posts()) : $the_query->the_post(); ?>
+              <a href="<?php the_permalink(); ?>" class="list-group-item list-group-item-action bg-transparent">
+                <div class="d-flex w-100">
+                  <small class="text-danger"><?php echo get_the_date("H:i"); ?></small>
+                  <span class="ml-2 text-white"><?php echo get_the_title(); ?></span>
+                </div>
+              </a>
             <?php endwhile; endif; ?>
           </div>
         </div>
       </div>
-
     </div>
   </div>
 </div> <!-- .hero-slider-item -->
@@ -58,13 +49,7 @@ $the_query = new WP_Query( $args ); ?>
 <?php } else if ($view=='slider'){ ?>
 <div class="hero-slider theme-slider template-home owl-carousel">
 
-  <?php if ($the_query->have_posts()) : while ($the_query->have_posts()) : $the_query->the_post();
-   
-    // Get the author info
-    $authorID = get_the_author_meta('ID');
-    $authorDisplayName= get_the_author_meta('display_name', $authorID);
-    $authorProfileURL = get_author_posts_url($authorID, get_the_author_meta('user_nicename', $authorID));
-    ?>
+  <?php if ($the_query->have_posts()) : while ($the_query->have_posts()) : $the_query->the_post(); ?>
 
     <div class="item hero-slider-item" data-thumb="<?php echo get_the_title(); ?>">      
       <div class="container-image">
@@ -97,11 +82,6 @@ $the_query = new WP_Query( $args ); ?>
                   <span class="meta-link-icon"><i class="fa fa-clock-o"></i></span>
                   <span class="meta-link-text"><?php echo get_the_date("H:i j F Y"); ?></span>
                 </div>
-                <?php /*
-                <a href="<?php echo $authorProfileURL; ?>" class="meta-link">
-                  <span class="meta-link-icon"><i class="fa fa-user-o"></i></span>
-                  <span class="meta-link-text"><?php the_author(); ?></span>
-                </a> */ ?>
               </div>
 
             </div> 
