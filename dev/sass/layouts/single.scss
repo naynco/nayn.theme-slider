@@ -153,7 +153,24 @@
   }
 }
 
+
+
 @media only screen and (min-width : 200px) and (max-width : 767px) {
+  
+  .single-page-content-container{
+      background-color:#fff;
+  }
+  .hero-slider h1{
+      color:#000;
+      text-shadow:1px 2px 0px #eee;
+  }
+  .entry-content{
+      color:#000;
+  }
+  .entry-content a{color:#000;}
+  .entry-tag a{
+      color:#000;
+  }
   .single-page{
     &-content{
       margin-top: 0px;
