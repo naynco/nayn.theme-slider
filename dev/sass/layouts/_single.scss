@@ -2,13 +2,26 @@
   a{  
     color: #fff;
     font-weight: 700;
-    background: -webkit-gradient(linear,left bottom,left top,color-stop(35%,rgba(255,209,29,.4)),color-stop(35%,transparent));
-    background: linear-gradient(to top,rgba(255,209,29,.4) 35%,transparent 35%);
+    z-index: 1;
+    position: relative;
     padding: 2px;
     display: inline-block;
     &:hover{
-      background-color: $yellow-100;
       text-decoration: none;
+    }
+    &:hover::after {
+      height: .2em;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: .07em;
+      height: .1em;
+      width: 100%;
+      background: linear-gradient(110deg, #e1f549, #29d0be, #6cb8ea, #ff5959);
+      z-index: -1;
+      transition: height .25s cubic-bezier(.6,0,.4,1);
     }
   }
 }
